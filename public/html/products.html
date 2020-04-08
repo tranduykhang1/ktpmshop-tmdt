@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sản phẩm</title>
+    <meta charshet="utf-8">
+    <link rel="stylesheet" href="../css/products.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src='../js/product.js'></script>
+</head>
+
+<body>
+    <div id="top">
+        <ul>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a class="active" href="">Sản phẩm</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+            <li><a href="order.html">Đơn hàng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="category">
+            <a href="home.html">
+                <h1 id="logo-title">KTPM SHOP
+                    <h1>
+            </a>
+            <ul>
+                <li> <a class="link-cate" href="#hoodie">HOODIE</a></li>
+                <li> <a class="link-cate" href="#tshirt">T-SHIRT</a></li>
+                <li> <a class="link-cate" href="#sweat">SWEAT SHIRT</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <section class='category-pro' id="hoodie">
+                <div id="logo">
+                    <p>hoodie</p>
+                </div>
+
+                <div class="display-pro" id="d-hoodie">
+                    <script>
+                        hoodie.map((value) => {
+                            document.getElementById('d-hoodie').innerHTML +=
+                                '<div class="product">' +
+                                ' <a href="detail.html">' +
+                                ' <img src="../image/' + value.img + '.png" alt="#">' +
+                                '<p class="name-pro">' + value.name + '</p>' +
+                                '<p class="price-pro">' + value.price + '.000VND</p>' +
+                                ' </a>' +
+                                ' </div>'
+                        });
+                    </script>
+                </div>
+
+
+            </section>
+
+            <section class='category-pro' id="tshirt">
+                <div id="logo">
+                    <p>T-shirt</p>
+                </div>
+                <div class="display-pro" id="d-tshirt">
+                    <script>
+                        tshirt.map((value) => {
+                            document.getElementById('d-tshirt').innerHTML +=
+                                '<div class="product">' +
+                                ' <a href="detail.html">' +
+                                ' <img src="../image/' + value.img + '.png" alt="#">' +
+                                '<p class="name-pro">' + value.name + '</p>' +
+                                '<p class="price-pro">' + value.price + '.000VND</p>' +
+                                ' </a>' +
+                                ' </div>'
+                        });
+                    </script>
+                </div>
+            </section>
+
+            <section class='category-pro' id="sweat">
+                <div id="logo">
+                    <p>sweatshirt</p>
+                </div>
+
+                <div class="display-pro" id="d-sweat">
+                    <script>
+                        sweat.map((value) => {
+                            document.getElementById('d-sweat').innerHTML +=
+                                '<div class="product">' +
+                                ' <a href="detail.html">' +
+                                ' <img src="../image/' + value.img + '.webp" alt="#">' +
+                                '<p class="name-pro">' + value.name + '</p>' +
+                                '<p class="price-pro">' + value.price + '.000VND</p>' +
+                                ' </a>' +
+                                ' </div>'
+                        });
+                    </script>
+                </div>
+            </section>
+            <div id="footer">
+                <p id="info">KTPM SHOP</p>
+            </div>
+        </div>
+
+
+
+</body>
+
+<script>
+</script>
+
+</html>

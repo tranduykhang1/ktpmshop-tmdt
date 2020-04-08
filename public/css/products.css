@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    background-color: white;
+}
+
+
+/**/
+
+#top {
+    padding: 20px;
+    width: 100%;
+}
+
+#top ul {
+    float: right;
+    margin-right: 100px;
+}
+
+#top ul li {
+    font-family: monospace;
+    display: inline-block;
+    margin: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#top ul li:hover {
+    border-bottom: 2px solid rgb(117, 117, 117);
+}
+
+.active {
+    border-bottom: 2px solid rgb(117, 117, 117);
+}
+
+
+/**/
+
+#container {
+    position: relative;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+/*danh mục sản phẩm*/
+
+#category {
+    height: 350px;
+    position: fixed;
+    top: 120px;
+    left: 30px;
+}
+
+#content {
+    float: left;
+    width: 1000px;
+    position: absolute;
+    left: 250px;
+}
+
+#category ul li {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.link-cate {
+    font-family: monospace;
+    border: none;
+    color: black;
+    font-size: 17px;
+    transition: .3s;
+    position: relative;
+}
+
+.link-cate::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    transition: .4s;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+
+.link-cate:hover::before {
+    transform: scaleX(1);
+}
+
+
+/*lo go trên*/
+
+#logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+
+/* sản phẩm*/
+
+.product {
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    transition: .4s;
+}
+
+.product:hover {
+    box-shadow: 1px 2px 5px 0px rgb(185, 185, 185);
+}
+
+.product img {
+    height: 300px;
+    width: 300px;
+}
+
+.category-pro {
+    padding: 50px 0;
+}
+
+.display-pro {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+.name-pro,
+.price-pro {
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px;
+    font-family: monospace;
+}
+
+#footer {
+    position: absolute;
+    text-align: center;
+    width: 155%;
+    margin-left: -260px;
+    margin-top: 50px;
+    background: rgb(233, 233, 233);
+}
+
+#footer #info {
+    padding: 20px;
+}
+
+
+/*hình sản phẩm*/
+
+img {
+    height: 270px;
+    width: 220px;
+}
+
+
+/* categrory */
+
+
+/* định dạng cái logo bên trái*/
+
+div div ul li img {
+    width: 130px;
+    height: 130px;
+}
+
+div.tenao {
+    font-size: 15px;
+    width: 100px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+a {
+    color: black;
+}
