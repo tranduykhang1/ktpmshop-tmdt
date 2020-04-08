@@ -301,3 +301,14 @@ button:hover::before {
     color: green;
     margin-left: 15px;
 }
+
+@media only screen and (max-width: 1400px) {
+    .sample-image,
+    .img-image {
+        width: 300px;
+        height: 350px;
+    }
+    .register-login {
+        transform: translate(550%, 20%);
+    }
+}
