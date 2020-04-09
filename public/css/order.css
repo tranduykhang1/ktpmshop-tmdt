@@ -70,6 +70,8 @@ td {
     cursor: pointer;
     transition: .3s;
     text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
 }
 
 .btn-cancle {
